@@ -7,31 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1OQ16hIU3AbRokeba7YZIZDN5DNrr4i2O
 """
 
-from IPython.display import clear_output
-
-! pip install datasets transformers sacrebleu torch sentencepiece transformers[sentencepiece]
-clear_output()
-
-import transformers
-print(transformers.__version__)
-
-import os
-import pandas as pd
-
-!pip install nlu
-clear_output()
-
-!pip install pyspark==3.0.1
-clear_output()
-
-!pip install torch
-clear_output()
-
-!python -m spacy download en_core_web_sm
-clear_output()
-
-!pip install streamlit
-clear_output()
 
 import streamlit as st
 import nlu
@@ -90,11 +65,3 @@ if st.button("Translate and Lemmatize"):
     if ancient_greek_lemmas is not None:
         st.success(ancient_greek_lemmas)
 
-!pip install pyngrok
-clear_output()
-
-from pyngrok import ngrok
-
-public_url = ngrok.connect(port='8501')
-
-!streamlit run my_app.py
