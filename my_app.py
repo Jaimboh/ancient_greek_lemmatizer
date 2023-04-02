@@ -1,4 +1,3 @@
-pip install nlu
 import streamlit as st
 import nlu
 import spacy
