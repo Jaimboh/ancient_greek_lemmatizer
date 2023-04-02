@@ -7,3 +7,4 @@ nlu
 pyspark==3.0.1
 spacy[transformers]
 streamlit
+python -m spacy download en_core_web_sm
