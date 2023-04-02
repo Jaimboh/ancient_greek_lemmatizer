@@ -7,5 +7,5 @@ nlu
 pyspark==3.0.1
 spacy[transformers]
 streamlit
-spacy==3.2.0
-!python -m spacy download en_core_web_sm
+spacy>=3.1.3
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.1.0/en_core_web_sm-3.1.0-py3-none-any.whl
