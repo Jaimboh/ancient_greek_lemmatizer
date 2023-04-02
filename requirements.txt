@@ -1,0 +1,6 @@
+! pip install datasets transformers sacrebleu torch sentencepiece transformers[sentencepiece]
+!pip install nlu
+!pip install pyspark==3.0.1
+!pip install torch
+!python -m spacy download en_core_web_sm
+!pip install streamlit
