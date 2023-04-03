@@ -4,6 +4,7 @@ sacrebleu
 torch
 sentencepiece
 nlu
+java==8
 pyspark==3.2.1
 spacy[transformers]
 streamlit
