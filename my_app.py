@@ -3,7 +3,12 @@ import nlu
 import spacy
 from transformers import MarianMTModel, MarianTokenizer
 import os
-os.environ["JAVA_HOME"] = "C:\\Program Files\\Java\\jdk1.8.0_241"
+os.environ['PYSPARK_SUBMIT_ARGS'] = '--driver-java-options "-Djava.home=C:\Program Files\Java\jdk1.8.0_361" pyspark-shell'
+
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder.appName('my_app').getOrCreate()
+
 
 
 # Disable Streamlit's caching
