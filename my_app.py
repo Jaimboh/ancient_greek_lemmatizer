@@ -3,7 +3,7 @@ import nlu
 import spacy
 from transformers import MarianMTModel, MarianTokenizer
 import os
-os.environ["JAVA_HOME"] = "E:\\Program Files\\Java\\jre1.8.0_361"
+os.environ["JAVA_HOME"] = "C:\\Program Files\\Java\\jre1.8.0_361\\bin"
 
 
 
